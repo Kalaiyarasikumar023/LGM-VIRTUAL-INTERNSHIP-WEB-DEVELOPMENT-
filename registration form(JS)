@@ -1,0 +1,15 @@
+document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Collect form data
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    // Display the submitted data
+    var resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "<h2>Submitted Information:</h2>" +
+        "<p>Name: " + name + "</p>" +
+        "<p>Email: " + email + "</p>" +
+        "<p>Password: " + password + "</p>";
+});
